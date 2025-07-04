@@ -1,14 +1,13 @@
 mod time_utils;
 mod slurp_util;
+mod grim_util;
 
 fn main() {
-    // println!("{}", time_utils::TimeUtil::get_time());
+    let path = time_utils::TimeUtil::get_directory();
 
-    // let path = time_utils::TimeUtil::get_directory();
-    // println!("{}", path.display());
-
-    let region = slurp_util::Slurp::get_region()
-        .expect("error");
-
-    println!("{}", region);
+    if grim_util::Grim::screenshot(&path) {
+        println!("✅ Screenshot saved to: {}", path.display());
+    } else {
+        println!("❌ Screenshot failed");
+    }
 }
