@@ -2,6 +2,7 @@ mod config;
 mod time_utils;
 mod slurp_util;
 mod grim_util;
+mod dunstify_util;
 
 fn main() {
     let config = config::Config::load();
@@ -13,6 +14,7 @@ fn main() {
         if config.copy_to_clipboard() {
             grim_util::Grim::copy_to_clipboard(&path);
         }
+        dunstify_util::notify_with_action(&path);
     } else {
         println!("Screenshot failed");
     }
