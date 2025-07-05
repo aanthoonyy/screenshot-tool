@@ -1,4 +1,3 @@
-// Chatgpt shit need to tweak later there is for sure a better way to do this 
 use serde::Deserialize;
 use std::fs;
 use std::path::PathBuf;
