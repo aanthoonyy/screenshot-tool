@@ -25,8 +25,4 @@ impl TimeUtil {
         path.push(Self::get_formatted(config));
         path
     }
-
-    pub fn get_time(config: &Config) -> String {
-        Self::get_formatted(config)
-    }
 }

@@ -73,8 +73,4 @@ impl Config {
     pub fn copy_to_clipboard(&self) -> bool {
         self.copy_to_clipboard.unwrap()
     }
-
-    pub fn open_editor(&self) -> bool {
-        self.open_editor.unwrap()
-    }
 }
