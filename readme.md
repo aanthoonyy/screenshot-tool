@@ -27,7 +27,17 @@ Make sure you have the following tools installed:
 - `dunst`
 - `swappy`
 
-Then clone the repo and build:
+---
+
+## Quick Install
+```bash
+git clone https://github.com/aanthoonyy/shrust.git
+cd shrust
+chmod +x install.sh
+./install.sh
+```
+
+### Manual Install
 
 ```bash
 git clone https://github.com/aanthoonyy/shrust.git
